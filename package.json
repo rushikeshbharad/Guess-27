@@ -1,8 +1,10 @@
 {
   "name": "my-app",
+  "homepage": "http://rushikeshbharad.github.io/Guess-27",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "git-pages": "^0.8.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-modal2": "^5.0.0",
@@ -12,6 +14,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
